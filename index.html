@@ -5,8 +5,14 @@
 			<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
 			<meta http-equiv="Pragma" content="no-cache">
 			<link rel="stylesheet" href="estilos.css">
+			<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			
+			<script src="boton.js"></script>
 
-			<title>Inicio</title>
+
+			<title>Porfolio - Javier Prieto</title>
+
 		</head>
 
 		<body>
@@ -14,25 +20,28 @@
 
 					<div class="menu">
 
-						<label for="hamb"> ☰ </label>
+							<label for="hamb">≣</label>
 							<input type="checkbox" id="hamb" style="display:none;">
 									<ul>
-										<li><a href="#curriculum">Curriculum</a></li>
+										<li><a href="#curriculum">Currículum</a></li>
 										<li><a href="#skills">Skills</a></li>
 										<li><a href="#contacto">Contacto</a></li>
 									</ul>
 					</div>
 
 					<div class="contenido">
+										
 
-								<div class="curriculum">
-									<p class="titulo" id="titulo">Curriculum</p>
+				
+								<div class="curriculum" data-aos="zoom-out-up" data-aos-duration="2000">
+								
+									<p class="titulo" id="titulo">Currículum</p>
 									<hr>
 									<table class="tabla">
 										<tr>
 											<td><strong><u>Nombre:</u></strong></td>
 											<td>Javier Prieto García</td>
-											<td rowspan="5"><img src="img/foto.PNG"></td>
+											<td rowspan="3"><img src="img/foto.PNG" class="fotodni"></td>
 										</tr>
 
 										<tr>
@@ -46,11 +55,11 @@
 										</tr>
 
 										<tr>
-											<td colspan="2">&nbsp;</td>
+											<td colspan="3">&nbsp;</td>
 										</tr>
 
 										<tr>
-											<td colspan="2"><strong><u>Estudios cursados:</u></strong></td>
+											<td colspan="3"><strong><u>Estudios cursados:</u></strong></td>
 										</tr>
 
 										<tr>
@@ -78,78 +87,88 @@
 								</div>
 
 
-								<div class="skills" id="skills">
+								<div class="skills" data-aos="zoom-out-up" data-aos-duration="2000" id="skills">
 
-										<p class="titulo">Skills</p>
+										<p class="titulo" >Skills</p>
 										<hr>
 
 										<table>
 											<tr>
 												<td><img src="img/Java.png" class="imagen"></td>
-												<td colspan="2">Nivel principiante</td>
+												<td colspan="2">Nivel Principiante</td>
 											</tr>
 
 											<tr>
-											<td><img src="img/csh.png" class="imagen"></td>
+												<td><img src="img/csh.png" class="imagen"></td>
 												<td colspan="2">En progreso</td>
 											</tr>
 
 											<tr>
-											<td><img src="img/front.png" class="imagen"></td>
-												<td colspan="2">Nivel medio</td>
+												<td><img src="img/front.png" class="imagen"></td>
+												<td colspan="2">Nivel Intermedio</td>
+											</tr>
+											<tr>
+												<td><img src="img/php.png" class="imagen"></td>
+												<td colspan="2">Nivel Intermedio</td> 
+											</tr>
+											<tr>
+												<td><img src="img/sql.png" class="imagen"></td>
+												<td colspan="2">Nivel Intermedio</td> 
 											</tr>
 
 											<tr>
-											<td><img src="img/ingles.png" class="imagen"></td>
-												<td colspan="2">Nivel B1-B2</td> 
-											</tr>
-
-											<td><img src="img/php.png" class="imagen"></td>
-												<td colspan="2">Nivel medio</td> 
-											</tr>
-
-											<td><img src="img/sql.png" class="imagen"></td>
-												<td colspan="2">Nivel medio</td> 
+												<td><img src="img/ingles.png" class="imagen"></td>
+												<td colspan="2">Nivel Intermedio</td> 
 											</tr>
 
 										</table>
 
-
 								</div>
 
-								<div class="contacto" id="contacto">
-										<p class="titulo">Contacto</p>
-								<hr>
-								<table>
-											<tr>
-												<td><img src="img/tlfn.png" class="imagen"></td>
-												<td colspan="2">673488535</td>
-											</tr>
+								<div class="contacto" data-aos="zoom-out-up" data-aos-duration="2000" id="contacto">
 
-											<tr>
-											<td><img src="img/inst.png" class="imagen"></td>
-												<td colspan="2">@javier93842</td>
-											</tr>
+											<p class="titulo" >Contacto</p>
 
-											<tr>
-											<td><img src="img/twi.png" class="imagen"></td>
-												<td colspan="2">@javier93842</td>
-											</tr>
+									<hr>
 
-											<tr>
-											<td><img src="img/gma.png" class="imagen"></td>
-												<td colspan="2">javier93842@gmail.com</td> 
-											</tr>
+										<table>
+												<tr>
+													<td><img src="img/tlfn.png" class="imagencontacto"></td>
+													<td>695969625</td>
+												</tr>
 
+												<tr>
+														<td><img src="img/git.png" class="imagencontacto"></td>
+														<td>javierpriS1/Portfolio</td>	
+												</tr>
+
+												<tr>
+													<td><img src="img/out.png" class="imagencontacto"></td>
+													<td>javier.prietogarcia@softwareone.com</td>
+												</tr>
 
 										</table>
 
-
 								</div>
+
+								<div class="botonsubir"><img src="img/volver.png" class="volver"/></div>
+
+								<script>
+
+								window.onload = function() {
+									var elevator = new Elevator({
+										element: document.querySelector('.botonsubir'),
+										duration: 2000
+									});
+								}
+
+								</script>
 					</div>
 
-
-
 				<div class='pie'> Página web creada por Javier Prieto García.</div>
+
+				<script>
+				  AOS.init();
+				</script>
 		</body>
 </html>

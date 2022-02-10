@@ -1,6 +1,6 @@
 * { margin:0; padding:0 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
 	ul{
 		width:100%;
@@ -50,9 +50,51 @@
 		text-align: center;
 	}
 
+	.titulo{
+		text-align: left;
+		font-size: 80px;
+		font-family: 'Courier New', Courier, monospace;
+		margin: 20px 0;
+	}
+
+	.imagen{
+		height: 90px;
+		width: 135px;
+		display: flex;
+		margin: auto;
+	}
+
+	.imagencontacto{
+		height: 90px;
+		width: 90px;
+		display: flex;
+		margin: auto;
+	}
+
+	.contacto table{
+		margin: auto;
+	}
+
+	.pie{
+		width: 100%;
+		height: 40px;
+		text-align: middle;
+		background-color:#000000;
+		color: rgb(255, 255, 255);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Arial;
+		font-size: 20px;
+		bottom: 0px;
+		border-top: 1px solid grey;
+		font-family: 'Courier New', Courier, monospace;
+		
+	}
+
 }
 
-@media screen and (min-width: 540px) and (max-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
 	ul{
 		width:100%;
 	}
@@ -65,7 +107,7 @@
 		list-style: none;
 		display: block;
 		margin: 0;
-		padding: 10px 0px;
+		padding: 7px 0px;
 		width: 33.333333%;
 		height: 60px;
 		float: left;
@@ -78,8 +120,8 @@
 
 	li:hover{
 		background-color: #ff7400;
-
 	}
+
 	.logo{
 		width: 400px;
 		height: 150px;
@@ -102,31 +144,93 @@
 		text-align: center;
 	}
 
+	.titulo{
+		text-align: left;
+		font-size: 50px;
+		font-family: 'Courier New', Courier, monospace;
+		margin: 20px 0;
+	}
+
+	.curriculum td {
+		font-size: 20px;
+	}
+
+	.skills td {
+		font-size: 20px;
+	}
+
+	.contacto td {
+		font-size: 20px;
+	}
+
+	.imagen{
+		height: 90px;
+		width: 135px;
+		display: flex;
+		margin: auto;
+	}
+
+	.imagencontacto{
+		height: 90px;
+		width: 90px;
+		display: flex;
+		margin: auto;
+	}
+
+	.pie{
+		width: 100%;
+		height: 40px;
+		text-align: middle;
+		background-color:#000000;
+		color: rgb(255, 255, 255);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Arial;
+		font-size: 20px;
+		bottom: 0px;
+		border-top: 1px solid grey;
+		font-family: 'Courier New', Courier, monospace;
+		
+	}
+
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
 
 	ul{
 		width:100%;
+		height: 60px;
 		display: none;
 		
 	}
 
 	li{
 		list-style: none;
-		background-color: #363634;
+		background-color: #000000;
 		display: block;
 		margin: 0;
 		padding: 10px;
-		border-bottom: 1px solid grey;
+		border-top: 1px solid grey;
 		font-size: 14px;
+		font-family: 'Courier New', Courier, monospace;
+	}
+
+	li:hover{
+		background-color: #ff7400;
+	}
+
+	li:hover a {
+		color:black;
+		font-weight: bold;
+		font-family: 'Courier New', Courier, monospace;
 	}
 	  
-	  input:checked ~ ul{
+	input:checked ~ ul{
 		display:block;
 	  }
 
-	  label {
+	label {
 		display: block;
 		width: 30px;
 		height: 30px;
@@ -136,124 +240,172 @@
 		user-select: none;
 	  }
 
-	  .cabecera{
+	.cabecera{
 		width: 100%;
-		height: 200px;
+		height: 150px;
 		position: relative;
 		top: 0px;
 		background-color:#ffffff;
 		text-align: center;
 	}
 
+	.titulo{
+		text-align: left;
+		font-size: 50px;
+		font-family: 'Courier New', Courier, monospace;
+		margin: 20px 0;
+	}
+
+	.logo{
+		width: 400px;
+		height: 150px;
+	}
+
+	.curriculum td {
+		font-size: 15px;
+	}
+
+	.skills td {
+		font-size: 15px;
+	}
+
+	.contacto td {
+		font-size: 15px;
+	}
+
+	.imagen{
+		height: 60px;
+		width: 95px;
+		display: flex;
+		margin: auto;
+	}
+
+	.imagencontacto{
+		height: 50px;
+		width: 50px;
+		display: flex;
+		margin: auto;
+	}
+
+	.pie{
+		width: 100%;
+		height: 40px;
+		text-align: middle;
+		background-color:#000000;
+		color: rgb(255, 255, 255);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Arial;
+		font-size: 15px;
+		bottom: 0px;
+		border-top: 1px solid grey;
+		font-family: 'Courier New', Courier, monospace;
+	}
+
+	.tabla .fotodni{
+		display: flex;
+		margin: auto;
+		width: 80px;
+		height: 120px;
+
+	}
+
 
 }
 
-.pie{
-	width: 100%;
-	height: 40px;
-	text-align: middle;
-	background-color:#000000;
-	color: rgb(255, 255, 255);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: Arial;
-	font-size: 20px;
-	bottom: 0px;
-	border-top: 1px solid grey;
-	font-family: 'Courier New', Courier, monospace;
-	
-}
 
-.titulo{
-	text-align: left;
-	font-size: 80px;
-	font-family: 'Courier New', Courier, monospace;
-	margin: 20px 0;
-}
+	.contenido{
+		width: 90%;
+		margin: 150px auto 40px auto;
+		background-color: rgb(238, 238, 238);
+	}
 
-.contenido{
-	width: 80%;
-	margin: 150px auto 50px auto;
-	background-color: rgb(238, 238, 238);
-}
-
-.menu{
-	background-color:#363634;
-	color: white;
-	width: 100%;
-	float:left;
-	text-align: center;
-	border-color: black 1px solid;
-}
+	.menu{
+		background-color:#000000;
+		color: white;
+		width: 100%;
+		height: 60px;
+		float:left;
+		text-align: center;
+		border-bottom:1px solid grey; 
+		border-top: 1px solid grey; 
+	}
 
 
-a{
-	text-decoration: none;
-	color: white;
-}
+	a{
+		text-decoration: none;
+		color: white;
+	}
 
 
-hr{
-	border-color: rgb(14, 14, 14);
-	width:60%;
+	hr{
+		border-color: rgb(14, 14, 14);
+		width:60%;
 
-}
+	}
 
-body{
-	background-color: rgb(212, 212, 212);
-}
+	body{
+		background-color: rgb(212, 212, 212);
+	}
 
-.curriculum{
-	padding: 5px;
-	margin-left: 20px;
-}
+	.curriculum{
+		padding: 5px;
+		margin-left: 20px;
+	}
 
-.skills{
-	padding: 5px;
-	margin-left: 20px;
-}
+	.skills{
+		padding: 5px;
+		margin-left: 20px;
+	}
 
-.contacto{
-	padding: 5px;
-	margin-left: 20px;
-	
-}
+	.contacto{
+		padding: 5px;
+		margin-left: 20px;	
+	}
 
-.curriculum table{
-	margin: 40px auto;
-	width:65%;
-	font-family: 'Courier New', Courier, monospace;
-}
+	.curriculum table{
+		margin: 40px auto;
+		width:65%;
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 10px;
+	}
 
-.skills table{
-	margin: auto;
-	width:55%;
-	font-family: 'Courier New', Courier, monospace;
-}
+	.skills table{
+		margin: auto;
+		width:55%;
+		font-family: 'Courier New', Courier, monospace;
+	}
 
-.contacto table{
-	width:55%;
-	font-family: 'Courier New', Courier, monospace;
-	margin: 50px auto;
-}
+	.skills td{
+		padding: 15px 5px;
+		
+	}
 
-.skills td{
-	padding: 15px 5px;
-	
-}
-.contacto td{
-	padding: 15px 5px;
-	
-}
+	.contacto td{
+		padding: 10px 10px;
+		
+	}
 
-tr, td{
-	height: 40px;
-	font-size: 25px;
-	font-family: 'Courier New', Courier, monospace;
-}
+	tr, td{
+		height: 40px;
+		font-size: 25px;
+		font-family: 'Courier New', Courier, monospace;
+	}
 
-.imagen{
-	height: 90px;
-	width: 135px;
-}
+	.tabla .fotodni{
+		display: flex;
+		margin: auto;
+	}
+
+	.botonsubir{
+		display: flex;
+		align-items: right;
+		justify-content: right;
+		padding: 20px 20px;
+	}
+
+	.volver{
+		height: 40px;
+		width: 40px;
+	}
